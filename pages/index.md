@@ -1,6 +1,8 @@
 ---
 title: Zach Renwick
 hide_title: true
+fullWidth: true
+hide_sidebar: false
 ---
 
 <img src="https://avatars.githubusercontent.com/zachrenwick" alt="Zach" class="rounded-full w-24 h-24 mb-4">
@@ -34,17 +36,24 @@ select
     65 as stars
 union all
 select
+    'Zach Renwick Data Blog' as name,
+    'https://github.com/zachrenwick/blog' as url,
+    'https://github.com/zachrenwick/blog' as source_code,
+    'The source code for the website you are currently viewing!' as description,
+    0 as stars
+union all
+select
     'dbt Course' as name,
     'https://github.com/zachrenwick/dbt-course' as url,
     'https://github.com/zachrenwick/dbt-course' as source_code,
-    'Completed a CoRise dbt course prior to starting my analytics engineering course several years ago.' as description,
+    'CoRise dbt course prior to starting analytics engineering role in 2022' as description,
     0 as stars
 union all
 select
     'Python Data Visualizations' as name,
     'https://github.com/zachrenwick/data_viz' as url,
     'https://github.com/zachrenwick/data_viz' as source_code,
-    'Python Jupyter notebook analyzing COVID 19 cases from 2021.' as description,
+    'Python Jupyter notebook analyzing COVID 19 cases from 2021' as description,
     0 as stars
 ```
 
@@ -74,6 +83,13 @@ Contract consulting position focused on migrating enterprise business intellgien
 - migrated existing legacy reporting suite onto Power BI Premium by creating centralized datasets and self serve tools
 - conducted teach outs to data team on Power BI modeling best practices and self serve use cases
 - reduced key Power BI dataset refresh times 
+
+### Power BI Developer @ lululemon
+*Aug 202- - Jul 2021 | Vancouver, CA*
+
+Contract Power BI consulting role focused on migrating business intellgience suite from Qlik to Power BI Premium. Key accomplishments:
+- migrated existing North America eCommerce sales reporting suite onto Power BI Premium
+- partnered with eCommerce finance department to establish self serve reporting datasets
 
 ## Volunteer Work
 
