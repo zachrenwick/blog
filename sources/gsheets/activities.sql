@@ -1,1 +1,0 @@
-select * from gsheets.StravaAPIDataLoader_2023.Sheet1
