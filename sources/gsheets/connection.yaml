@@ -1,0 +1,8 @@
+name: google_sheet
+type: gsheets
+options: {}
+sheets:
+  source_strava:
+    id: 1mJWjGNWMyuoBlhX8_BTBio-3ddYZNBi0kkkhryhFxLU
+    pages:
+      - Sheet1
