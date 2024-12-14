@@ -1,56 +1,82 @@
 ---
-title: Welcome to Evidence
+title: Zach Renwick
+hide_title: true
 ---
 
-<Details title='How to edit this page'>
+<img src="https://avatars.githubusercontent.com/zachrenwick" alt="Zach" class="rounded-full w-24 h-24 mb-4">
 
-  This page can be found in your project at `/pages/index.md`. Make a change to the markdown file and save it to see the change take effect in your browser.
-</Details>
+## Zach Renwick
 
-```sql categories
-  select
-      category
-  from needful_things.orders
-  group by category
+<div style="display: flex; flex-direction: row; gap: 10px;">
+    <a href="https://www.linkedin.com/in/zachrenwick/"><img src="https://img.shields.io/badge/-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+    <a href="https://x.com/zachrenwick"><img src="https://img.shields.io/badge/-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter"></a>
+    <a href="https://bsky.app/profile/zachrenwick-data.bsky.social"><img src="https://img.shields.io/badge/-00A0DC?style=for-the-badge&logo=bluesky&logoColor=white" alt="Bluesky"></a>
+    <a href="https://github.com/zachrenwick"><img src="https://img.shields.io/badge/-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+</div>
+
+<LineBreak lines=1/>
+
+Data analytics engineer with extensive SQL, data visualization and data modeling skills. I help people (and machines) make better decisions by creating insightful and actionable datasets, powering dashboards and machine learning digital experiences.
+
+I also love being active: riding bikes, strength training, and playing pickleball. 
+
+<a href="https://www.strava.com/athletes/6692"><img src="https://img.shields.io/badge/-Strava-FC4C02?style=flat&logo=strava&logoColor=white" alt="Strava"></a>
+
+## Projects
+
+
+```sql projects
+select 
+    'Streamlit Forecasting App' as name,
+    'https://github.com/zachrenwick/streamlit_forecasting_app/' as url,
+    'https://github.com/zachrenwick/streamlit_forecasting_app' as source_code,
+    'Upload a CSV file and return an automated forecast for download.' as description,
+    65 as stars
+union all
+select
+    'dbt Course' as name,
+    'https://github.com/zachrenwick/dbt-course' as url,
+    'https://github.com/zachrenwick/dbt-course' as source_code,
+    'Completed a CoRise dbt course prior to starting my analytics engineering course several years ago.' as description,
+    0 as stars
+union all
+select
+    'Python Data Visualizations' as name,
+    'https://github.com/zachrenwick/data_viz' as url,
+    'https://github.com/zachrenwick/data_viz' as source_code,
+    'Python Jupyter notebook analyzing COVID 19 cases from 2021.' as description,
+    0 as stars
 ```
 
-<Dropdown data={categories} name=category value=category>
-    <DropdownOption value="%" valueLabel="All Categories"/>
-</Dropdown>
+<DataTable data={projects} link=url>
+  <Column id=name/>
+  <Column id=description/>
+  <Column id=stars/>
+  <Column id=source_code contentType=link linkLabel="GitHub &rarr;"/>
+</DataTable>
 
-<Dropdown name=year>
-    <DropdownOption value=% valueLabel="All Years"/>
-    <DropdownOption value=2019/>
-    <DropdownOption value=2020/>
-    <DropdownOption value=2021/>
-</Dropdown>
 
-```sql orders_by_category
-  select 
-      date_trunc('month', order_datetime) as month,
-      sum(sales) as sales_usd,
-      category
-  from needful_things.orders
-  where category like '${inputs.category.value}'
-  and date_part('year', order_datetime) like '${inputs.year.value}'
-  group by all
-  order by sales_usd desc
-```
+## Experience
 
-<BarChart
-    data={orders_by_category}
-    title="Sales by Month, {inputs.category.label}"
-    x=month
-    y=sales_usd
-    series=category
-/>
+### Senior Analytics Engineer @ Aritzia
+*Jul 2022 - Present | Vancouver, CA*
 
-## What's Next?
-- [Connect your data sources](settings)
-- Edit/add markdown files in the `pages` folder
-- Deploy your project with [Evidence Cloud](https://evidence.dev/cloud)
+Senior engineer within analytics community of practice focused on building digital analytics data infrastrcture and reverse ETL data activation capabilities. Key accomplishments:
+- designed and developed a clickstream web analytics data mart which enabled full customer lifecycle insights, from initial ad click to website visit to sales and returns analysis 
+- integrated Google Analytics Universal Analytics data with Google Analytics 4 to enable YoY traffic analysis 
+- developed dataset which powered digital fit predictor tool, generating more accurate product recommendations and additional sales revenue 
+- mentored other analytics engineers and data analysts on SQL, GitHub and dataform best practices
 
-## Get Support
-- Message us on [Slack](https://slack.evidence.dev/)
-- Read the [Docs](https://docs.evidence.dev/)
-- Open an issue on [Github](https://github.com/evidence-dev/evidence)
+### Power BI Developer @ West Fraser
+*Jul 2021 - Jul 2022 | Vancouver, CA*
+
+Contract consulting position focused on migrating enterprise business intellgience suite from Oracle BI to Power BI Premium. Key accomplishments:
+- migrated existing legacy reporting suite onto Power BI Premium by creating centralized datasets and self serve tools
+- conducted teach outs to data team on Power BI modeling best practices and self serve use cases
+- reduced key Power BI dataset refresh times 
+
+## Volunteer Work
+
+**Building Committee Member | Capilano Students' Union**  
+*2021 - Present*  
+Alumni board member helping alma mater students' union build a new SUB on campus
