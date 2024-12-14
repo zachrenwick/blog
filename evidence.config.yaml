@@ -9,6 +9,6 @@ plugins:
     # Make to also add them to `package.json`.
     "@evidence-dev/bigquery": { }
     "@evidence-dev/duckdb": { }
-
+    "@evidence-dev/csv": { }
 deployment:
   basePath: /blog
