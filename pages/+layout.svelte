@@ -5,6 +5,6 @@
 	export let data;
 </script>
 
-<EvidenceDefaultLayout {data} hideBreadcrumbs hideSidebar githubRepo=https://github.com/archiewood/archie-evidence>
+<EvidenceDefaultLayout {data} githubRepo=https://github.com/zachrenwick/blog>
 	<slot slot="content" />
 </EvidenceDefaultLayout>
