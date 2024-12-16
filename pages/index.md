@@ -85,7 +85,7 @@ Contract consulting position focused on migrating enterprise business intellgien
 - reduced key Power BI dataset refresh times 
 
 ### Power BI Developer @ lululemon
-*Aug 202 - Jul 2021 | Vancouver, CA*
+*Aug 2022 - Jul 2021 | Vancouver, CA*
 
 Contract Power BI consulting role focused on migrating business intellgience suite from Qlik to Power BI Premium. Key accomplishments:
 - migrated existing North America eCommerce sales reporting suite onto Power BI Premium
