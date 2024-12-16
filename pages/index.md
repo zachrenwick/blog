@@ -18,7 +18,7 @@ hide_sidebar: false
 
 <LineBreak lines=1/>
 
-Data analytics engineer with extensive SQL, data visualization and data modeling skills. I help people (and machines) make better decisions by creating insightful and actionable datasets, powering dashboards and predictive digital experiences.
+Data & analytics engineer with extensive SQL, data visualization and data modeling skills. I help people (and machines) make better decisions by creating insightful and actionable datasets, powering dashboards and predictive digital experiences.
 
 I also love being active: riding bikes, strength training, and playing pickleball. 
 
@@ -33,34 +33,29 @@ select
     'https://github.com/zachrenwick/streamlit_forecasting_app/' as url,
     'https://github.com/zachrenwick/streamlit_forecasting_app' as source_code,
     'Upload a CSV file and return an automated forecast for download.' as description,
-    65 as stars
 union all
 select
     'Zach Renwick Data Blog' as name,
     'https://github.com/zachrenwick/blog' as url,
     'https://github.com/zachrenwick/blog' as source_code,
     'The source code for the website you are currently viewing!' as description,
-    0 as stars
 union all
 select
     'dbt Course' as name,
     'https://github.com/zachrenwick/dbt-course' as url,
     'https://github.com/zachrenwick/dbt-course' as source_code,
     'CoRise dbt course prior to starting analytics engineering role in 2022' as description,
-    0 as stars
 union all
 select
     'Python Data Visualizations' as name,
     'https://github.com/zachrenwick/data_viz' as url,
     'https://github.com/zachrenwick/data_viz' as source_code,
     'Python Jupyter notebook analyzing COVID 19 cases from 2021' as description,
-    0 as stars
 ```
 
 <DataTable data={projects} link=url>
   <Column id=name/>
   <Column id=description/>
-  <Column id=stars/>
   <Column id=source_code contentType=link linkLabel="GitHub &rarr;"/>
 </DataTable>
 
