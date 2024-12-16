@@ -1,5 +1,5 @@
 ---
-title: Post2
+title: Modeling Google Analytics Data
 hide_title: true
 fullWidth: true
 ---
