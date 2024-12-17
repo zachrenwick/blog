@@ -2,7 +2,7 @@
   "name": "my-evidence-project",
   "version": "0.0.1",
   "scripts": {
-    "build": "EVIDENCE_BUILD_DIR=./build/blog evidence build",
+    "build": "evidence build",
     "build:strict": "evidence build:strict",
     "dev": "evidence dev --open /",
     "test": "evidence build",
@@ -15,15 +15,16 @@
   },
   "type": "module",
   "dependencies": {
-    "@evidence-dev/bigquery": "^2.0.8",
+    "@evidence-dev/bigquery": "^2.0.9",
     "@evidence-dev/core-components": "^5.0.2",
-    "@evidence-dev/csv": "^1.0.13",
-    "@evidence-dev/duckdb": "^1.0.12",
+    "@evidence-dev/csv": "^1.0.14",
+    "@evidence-dev/duckdb": "^1.0.13",
     "@evidence-dev/evidence": "^40.0.2"
   },
   "overrides": {
     "jsonwebtoken": "9.0.0",
     "trim@<0.0.3": ">0.0.3",
-    "sqlite3": "5.1.5"
+    "sqlite3": "5.1.5",
+    "axios": "^1.7.4"
   }
 }
