@@ -119,3 +119,21 @@ order by 1
     date=date_dt
     value=activity_hours
 />
+
+
+
+```sql activities_by_month
+select 
+datetrunc('month',date_dt) as month_dt,
+sum(elapsed_hours) as elapsed_hours
+from strava.strava_log
+where date_dt >= '2024-01-01'
+group by all
+order by 1
+```
+
+<BarChart 
+    data={activities_by_month} sort="month_dt"
+    x=month_dt
+    y=elapsed_hours
+/>
