@@ -28,7 +28,7 @@ It turns out 2023 was my best year for exercise hours:
 select 
 cast(year(date_dt) as string) as year_dt,
 sum(activity_hours) as activity_hours
-from strava.strava_log
+from strava_bq.strava_log
 where date_dt >= '2020-01-01'
 group by all
 order by 1
@@ -51,7 +51,7 @@ WITH monthly_activity_hours AS (
         DATE_TRUNC('month', date_dt) AS date,
         SUM(activity_hours) AS activity_hours
     FROM 
-        strava.strava_log
+        strava_bq.strava_log
     WHERE date_dt >=  date_trunc('month',current_date()-365)
     GROUP BY 
         1,2
@@ -83,7 +83,7 @@ I seem to have seasonal obsessions with Cycling, Pickleball and in the fall/wint
         DATE_TRUNC('month', date_dt) AS month_dt,
         SUM(activity_hours) AS activity_hours
     FROM 
-        strava.strava_log
+        strava_bq.strava_log
     WHERE date_dt >= date_trunc('month', current_date()-365)
     and sport != 'Other'
     GROUP BY 
@@ -107,7 +107,7 @@ What if we wanted to look at exercise activity in a calendar view?
 select 
 date_dt,
 sum(activity_hours) as activity_hours
-from strava.strava_log
+from strava_bq.strava_log
 where date_dt >= '2020-01-01'
 group by all
 order by 1
@@ -121,12 +121,11 @@ order by 1
 />
 
 
-
 ```sql activities_by_month
 select 
 datetrunc('month',date_dt) as month_dt,
 sum(elapsed_hours) as elapsed_hours
-from strava.strava_log
+from strava_bq.strava_log
 where date_dt >= '2024-01-01'
 group by all
 order by 1
