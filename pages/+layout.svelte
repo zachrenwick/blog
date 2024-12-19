@@ -23,6 +23,6 @@ onMount(async () => {
 
 </script>
 
-<EvidenceDefaultLayout {data}>
-	<slot slot="content" />
+<EvidenceDefaultLayout {data}   homePageName="About Me" title="ZR Data">
+	<slot slot="content"  />
 </EvidenceDefaultLayout>

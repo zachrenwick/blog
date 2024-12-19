@@ -86,6 +86,16 @@ Contract Power BI consulting role focused on migrating business intellgience sui
 - migrated existing North America eCommerce sales reporting suite onto Power BI Premium
 - partnered with eCommerce finance department to establish self serve reporting datasets
 
+### BI Developer @ Best Buy Canada
+*Sep 2019 - Aug 2020 | Vancouver, CA*
+
+Supported the digital intelligence and eCommerce teams with reports, dashboards and analysis of web and business data.
+- Developed data pipelines with Python
+- Supported ongoing delivery of automated reports via SSRS, Power BI and Adobe Analytics
+- Conveyed insights to users quickly and effectively using data visualizations and tables
+- Supported analysts on digital intelligence team with data they need to conduct ad-hoc analysis
+- Raised the eCommerce department overall analytic IQ through formal training, workshops, insights meetings and presentations to senior leadership
+
 ## Volunteer Work
 
 **Building Committee Member | Capilano Students' Union**  
