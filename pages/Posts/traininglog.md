@@ -16,7 +16,8 @@ I thought it would be interesting to combine my passions of exercising and worki
 1. I log all my activities with my Garmin smartwatch
 2. The data is then synced with Garmin Connect/Strava
 3. I set up a [Strava developer app](https://developers.strava.com/) in order to call the Strava API
-4. Someone else shared a [useful Google Apps script](https://github.com/benlcollins/strava-sheets-integration) which I run every 6 hours, dumping activity data into a Google Sheet which I can then query using DuckDB or BigQuery 
+4. Someone else shared a [useful Google Apps script](https://github.com/benlcollins/strava-sheets-integration) which I run every 6 hours, dumping activity data into a Google Sheet. 
+5. Then I query the Google Sheet using SQL in BigQuery, using [external table functionality](https://cloud.google.com/bigquery/docs/external-data-drive). 
 
 Here you can see I've integrated my Strava/Garmin workouts into this website to analyze how my exercise patterns have changed over time. More is always better, right?
 
