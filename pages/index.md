@@ -65,7 +65,7 @@ select
 ### Senior Analytics Engineer @ Aritzia
 *Jul 2022 - Present | Vancouver, CA*
 
-Senior engineer within analytics community of practice focused on building digital analytics data infrastrcture and reverse ETL data activation capabilities. Key accomplishments:
+Senior engineer within analytics community of practice focused on building digital analytics data infrastructure and reverse ETL data activation capabilities. Key accomplishments:
 - designed and developed a clickstream web analytics data mart which enabled full customer lifecycle insights, from initial ad click to website visit to sales and returns analysis 
 - integrated Google Analytics Universal Analytics data with Google Analytics 4 to enable YoY traffic analysis 
 - developed dataset which powered digital fit predictor tool, generating more accurate product recommendations and additional sales revenue 
