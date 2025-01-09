@@ -25,9 +25,6 @@ group by all
 order by 1
 ```
 
-<BarChart 
-    data={activities_by_date} sort="date_dt"
-    x=date_dt
-    y=activity_hours
-/>
-
+<LineChart data={activities_by_date} x=date_dt y=activity_hours yAxisTitle="Daily Activity Hours">
+    <ReferenceLine y=0.75 label="45 Daily Target"/>
+</LineChart>

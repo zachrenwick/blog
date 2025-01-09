@@ -9,8 +9,6 @@ In this article I’ll share the top issues and missing features of Power BI Rep
 
 _as of May 2020 – these features may change over time._
 
-![](/posts/images/pbi-south-park.png){fig-alt="Power BI Report Server Bad Time" fig-align="center"}
-
 **To begin with, what is PowerBI.com vs. Power BI Report Server?**
 
 Microsoft offers free, Pro, and Premium licensing options for Power BI in the cloud. Under these cloud options, users access their reports, dashboards and data through the Power BI service on PowerBI.com.
